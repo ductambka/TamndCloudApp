@@ -18,6 +18,9 @@ dotenv.config();
 const api_key = process.env.API_KEY;
 const api_url = process.env.API_URL;
 
+console.log('api_key = ', api_key);
+console.log('api_url = ', api_url);
+
 function getNLUInstance() {
     /*Type the code to create the NLU instance and return it.
     You can refer to the image in the instructions document
