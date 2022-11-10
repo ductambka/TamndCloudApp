@@ -79,8 +79,8 @@ class App extends React.Component {
                 Object.entries(this.props.emotions).map(function(data) {
                 return (
                     <tr>
-                    <td>{mapentry[0]}</td>
-                    <td>{mapentry[1]}</td>
+                    <td>{data[0]}</td>
+                    <td>{data[1]}</td>
                     </tr>
                 )
                 })
