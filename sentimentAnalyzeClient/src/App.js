@@ -76,6 +76,14 @@ class App extends React.Component {
         fetch(url).then((response) => {
             response.json().then((data) => {
                 this.setState({sentimentOutput: <EmotionTable emotions={data}/>});
+                Object.entries(this.props.emotions).map(function(mapentry) {
+                return (
+                    <tr>
+                    <td>{mapentry[0]}</td>
+                    <td>{mapentry[1]}</td>
+                    </tr>
+                )
+                })
             })
         });
     }
